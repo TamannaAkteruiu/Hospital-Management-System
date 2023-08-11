@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="531.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Admin_doctor_controll">
+   <children>
+      <Label layoutX="25.0" layoutY="24.0" text="Doctors">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="admin_doctor_table" layoutX="25.0" layoutY="44.0" prefHeight="465.0" prefWidth="767.0">
+        <columns>
+          <TableColumn fx:id="d_id" prefWidth="75.0" text="Doctor ID" />
+          <TableColumn fx:id="d_name" prefWidth="93.0" text="Name" />
+            <TableColumn fx:id="d_gander" prefWidth="68.0" text="Gender" />
+            <TableColumn fx:id="d_CN" prefWidth="100.0" text="Contact Number" />
+            <TableColumn fx:id="d_email" prefWidth="136.0" text="Email Address" />
+            <TableColumn fx:id="d_address" prefWidth="89.0" text="Address" />
+            <TableColumn fx:id="s_status" prefWidth="68.0" text="Status" />
+            <TableColumn fx:id="d_action" prefWidth="136.0" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="531.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Admin_appoinment_controll">
+   <children>
+      <Label layoutX="25.0" layoutY="24.0" text="Appointment">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="appoinment_table" layoutX="25.0" layoutY="52.0" prefHeight="465.0" prefWidth="767.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="93.0" text="Name" />
+            <TableColumn fx:id="gender" prefWidth="68.0" text="Gender" />
+            <TableColumn fx:id="diagnosis" prefWidth="100.0" text="Diagnosis" />
+            <TableColumn fx:id="treatment" prefWidth="96.0" text="Treatment" />
+            <TableColumn fx:id="contact_no" prefWidth="94.0" text="Contact NO." />
+            <TableColumn fx:id="date" prefWidth="103.0" text="Date" />
+            <TableColumn fx:id="action" prefWidth="136.0" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

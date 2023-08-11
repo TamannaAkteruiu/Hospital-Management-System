@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="531.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Doctor_dashboard_controll">
+   <children>
+      <Pane layoutX="16.0" layoutY="17.0" prefHeight="60.0" prefWidth="185.0" style="-fx-background-color: #E9E9E9;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="13.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="92.0" layoutY="10.0" text="Total Patients">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="total_patient" layoutX="158.0" layoutY="32.0" text="0" />
+         </children>
+      </Pane>
+      <Pane layoutX="315.0" layoutY="17.0" prefHeight="60.0" prefWidth="185.0" style="-fx-background-color: #E9E9E9;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="13.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="54.0" layoutY="10.0" text="Total Appointments">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="total_appoinment" layoutX="158.0" layoutY="32.0" text="0" />
+         </children>
+      </Pane>
+      <Pane layoutX="616.0" layoutY="17.0" prefHeight="60.0" prefWidth="185.0" style="-fx-background-color: #E9E9E9;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="13.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="92.0" layoutY="10.0" text="Total Active">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="total_active_patient" layoutX="158.0" layoutY="32.0" text="0" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="97.0" prefHeight="421.0" prefWidth="790.0" style="-fx-background-color: #E9E9E9;">
+         <children>
+            <TableView fx:id="Appoinment_table" layoutY="36.0" prefHeight="388.0" prefWidth="790.0">
+              <columns>
+                <TableColumn fx:id="appoinment_id" prefWidth="116.0" text="Appointment ID" />
+                <TableColumn fx:id="name" prefWidth="152.0" text="Patients Name" />
+                  <TableColumn fx:id="contact_no" prefWidth="127.0" text="Contact Number" />
+                  <TableColumn fx:id="diagnosis" prefWidth="145.0" text="Diagnosis" />
+                  <TableColumn fx:id="appoinment_date" minWidth="0.0" prefWidth="158.0" text="Appointment Date" />
+                  <TableColumn fx:id="status" minWidth="0.0" prefWidth="91.0" text="Status" />
+              </columns>
+            </TableView>
+            <Label layoutX="8.0" layoutY="6.0" text="Appoinment">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

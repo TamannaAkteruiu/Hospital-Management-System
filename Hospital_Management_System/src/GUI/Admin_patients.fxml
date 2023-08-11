@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="531.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Admin_patient_controll">
+   <children>
+      <Label layoutX="25.0" layoutY="24.0" text="Patients">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="patient_view_table" layoutX="25.0" layoutY="52.0" prefHeight="465.0" prefWidth="767.0">
+        <columns>
+          <TableColumn fx:id="patient_id" prefWidth="85.0" text="Patient ID" />
+          <TableColumn fx:id="name" prefWidth="97.0" text="Name" />
+            <TableColumn fx:id="gender" prefWidth="90.0" text="Gender" />
+            <TableColumn fx:id="phn_no" prefWidth="120.0" text="Contact Number" />
+            <TableColumn fx:id="address" prefWidth="149.0" text="Address" />
+            <TableColumn fx:id="status" prefWidth="95.0" text="Status" />
+            <TableColumn fx:id="d_action" prefWidth="130.0" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
